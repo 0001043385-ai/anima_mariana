@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --amarelo: #FEDA18;
+    --rosa: #FFD4D4;
+    --verde: #BDD8A4;
+    --lilas: #E4D9DC;
+    --branco: #FFFFFF;
+    --texto: #333333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--texto);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--branco);
+    padding: 12px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #9A7D00;
+}
+
+#inicio {
+    min-height: 75vh;
+    background-color: #EDE3D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 8%;
+}
+
+#inicio h1 {
+    max-width: 850px;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 20px;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    display: inline-block;
+    background-color: #BDD8A4;
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+#inicio a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#sobre {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+#sobre p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+#sobre h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#servicos {
+    padding: 80px 8%;
+    background-color: #F9F6F5;
+    text-align: center;
+}
+
+#servicos h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #EDE5E5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #806900;
+}
+
+.card p {
+    color: var(--texto);
+}
+
+@media (max-width: 768px) {
+    .servicos-container {
+        grid-template-columns: 1fr;
+    }
+
+    #servicos {
+        padding: 60px 6%;
+    }
+
+    #servicos h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #inicio {
+        min-height: 60vh;
+        padding: 50px 6%;
+    }
+
+    #inicio h1 {
+        font-size: 30px;
+    }
+
+    #inicio p {
+        font-size: 17px;
+    }
+
+    #sobre h2, #contato h2 {
+        font-size: 28px;
+    }
+}
+
+#etica {
+    padding: 70px 8%;
+    background-color: #E4D9DC;
+    text-align: center;
+}
+
+#etica h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#etica p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+#etica p strong {
+    display: inline-block;
+    background-color: var(--branco);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: #806900;
+    font-size: 18px;
+    border: 1px solid #D5C7CB;
+}
+
+#contato {
+    padding: 80px 8%;
+    background-color: var(--branco);
+}
+
+#contato h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#contato p {
+    margin-bottom: 15px;
+}
+
+#contato h3 {
+    font-size: 24px;
+    margin: 30px 0 20px;
+}
+
+#contato form {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contato label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D5C7CB;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #FDF9F9;
+}
+
+#contato textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+#contato button {
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--amarelo);
+    color: var(--texto);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contato button:hover {
+    background-color: #E8C900;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #333333;
+    color: var(--branco);
+    text-align: center;
+    padding: 35px 8%;
+}
+
+footer p {
+    margin-bottom: 12px;
+}
+
+.links-rodape {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 20px 0;
+}
+
+.links-rodape a {
+    color: var(--amarelo);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links-rodape a:hover {
+    color: var(--rosa);
+}
+
+.whatsapp-flutuante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #FFFFFF;
+    padding: 15px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.whatsapp-flutuante:hover {
+    background-color: #1EAD54;
+    transform: translateY(-4px);
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+    display: block;
+}
