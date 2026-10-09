@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 :root {
@@ -70,12 +71,12 @@ nav a:hover {
 
 #inicio h1 {
     max-width: 850px;
-    font-size: 42px;
+    font-size: 46px;
     margin-bottom: 20px;
 }
 
 #inicio p {
-    font-size: 20px;
+    font-size: 22px;
     max-width: 650px;
     margin-bottom: 30px;
 }
@@ -86,7 +87,7 @@ nav a:hover {
     color: var(--texto);
     text-decoration: none;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 17px 35px;
     border-radius: 30px;
     transition: 0.3s;
 }
@@ -99,20 +100,24 @@ nav a:hover {
 #sobre {
     padding: 80px 8%;
     text-align: center;
+    background-color: #E8D5CF;
 }
 
 #sobre h2 {
-    font-size: 34px;
+    font-size: 36px;
     margin-bottom: 25px;
 }
 
 #sobre p {
     max-width: 800px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
 #sobre h3 {
     font-size: 24px;
+    margin-top: 35px;
     margin-bottom: 15px;
 }
 
